@@ -16,6 +16,13 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.mlcr.jobfind</groupId>
+                <artifactId>org.mlcr.jobfind.database.mgt</artifactId>
+                <version>${jobfind.database.mgt.api.version}</version>
+            </dependency>
+
+
+            <dependency>
                 <groupId>javax.ws.rs</groupId>
                 <artifactId>javax.ws.rs-api</artifactId>
                 <version>${javax.ws.rs.version}</version>
@@ -29,6 +36,170 @@
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-annotations</artifactId>
                 <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-core</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-jaxrs</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+            <!-- CXF dependencies -->
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-frontend-jaxws</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>xml-resolver</groupId>
+                        <artifactId>xml-resolver</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>asm</groupId>
+                        <artifactId>asm</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-rt-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-rt-bindings-xml</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-rt-frontend-simple</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-rt-ws-addr</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>javax.ws.rs</groupId>
+                        <artifactId>jsr311-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-rt-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>jsr311-api</artifactId>
+                <version>${jsr311.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>${javax.ws.rs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons.logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-transports-http</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-bindings-soap</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-rt-databinding-jaxb</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-bindings-http</artifactId>
+                <version>${cxf.bindings.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.codehaus.jra</groupId>
+                        <artifactId>jra</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-rs-extension-providers</artifactId>
+                <version>${cxf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-ws-security</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>net.sf.ehcache</groupId>
+                        <artifactId>ehcache-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.ws.security</groupId>
+                        <artifactId>wss4j</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet-api.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -50,6 +221,18 @@
         <javax.ws.rs.version>2.0</javax.ws.rs.version>
         <jsr311.version>1.1.1</jsr311.version>
         <swagger.version>1.5.8</swagger.version>
+        <log4j.version>1.2.17</log4j.version>
+        <mysql.version>5.1.35</mysql.version>
+        <jobfind.database.mgt.api.version>1.0.0-SNAPSHOT</jobfind.database.mgt.api.version>
+        <httpclient.version>4.5.1</httpclient.version>
+        <swagger.version>1.5.8</swagger.version>
+        <servlet-api.version>2.5</servlet-api.version>
+
+        <cxf.version>2.7.16</cxf.version>
+        <jsr311.version>1.1.1</jsr311.version>
+        <javax.ws.rs.version>2.0.1</javax.ws.rs.version>
+        <commons.logging.version>1.2</commons.logging.version>
+        <cxf.bindings.version>2.5.11</cxf.bindings.version>
     </properties>
 
 </project>

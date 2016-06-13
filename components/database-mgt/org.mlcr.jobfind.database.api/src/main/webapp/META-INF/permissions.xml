@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PermissionConfiguration>
+    <APIVersion></APIVersion>
+    <!-- Device related APIs -->
+
+    <Permission>
+        <name>JobFind Management User</name>
+        <path>/jobfind/applicant</path>
+        <url>/</url>
+        <method>POST</method>
+    </Permission>
+    <Permission>
+        <name>JobFind Management User</name>
+        <path>/jobfind/applicant</path>
+        <url>/</url>
+        <method>GET</method>
+    </Permission>
+
+</PermissionConfiguration>

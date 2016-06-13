@@ -14,8 +14,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>org.mlcr.jobfind.database.api</module>
         <module>org.mlcr.jobfind.database.mgt</module>
+        <module>org.mlcr.jobfind.database.api</module>
     </modules>
 
 
