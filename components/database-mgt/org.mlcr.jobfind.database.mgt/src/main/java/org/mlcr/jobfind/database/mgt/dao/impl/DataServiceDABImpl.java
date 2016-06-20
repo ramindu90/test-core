@@ -1,10 +1,9 @@
-package org.mlcr.jobfind.database.mgt.dao.implimentation;
+package org.mlcr.jobfind.database.mgt.dao.impl;
 
 import org.apache.log4j.Logger;
 import org.mlcr.jobfind.database.mgt.bean.Application;
 import org.mlcr.jobfind.database.mgt.dao.DataServiceDAO;
 import org.mlcr.jobfind.database.mgt.dao.DataServiceDAOFactory;
-import org.mlcr.jobfind.database.mgt.exception.DALException;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,8 +13,8 @@ import java.sql.SQLException;
 /**
  * Created by Ramindu on 6/12/16.
  */
-public class DataServiceDABImplementation implements DataServiceDAO {
-    final static Logger log = Logger.getLogger(DataServiceDABImplementation.class);
+public class DataServiceDABImpl implements DataServiceDAO {
+    final static Logger log = Logger.getLogger(DataServiceDABImpl.class);
 
     public void registerApplicant(Application application) throws SQLException {
         Connection con;

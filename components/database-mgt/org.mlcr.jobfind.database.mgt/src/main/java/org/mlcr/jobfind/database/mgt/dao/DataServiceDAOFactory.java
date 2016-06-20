@@ -1,6 +1,6 @@
 package org.mlcr.jobfind.database.mgt.dao;
 
-import org.mlcr.jobfind.database.mgt.dao.implimentation.DataServiceDABImplementation;
+import org.mlcr.jobfind.database.mgt.dao.impl.DataServiceDABImpl;
 import org.mlcr.jobfind.database.mgt.exception.IllegalConnectionException;
 
 import javax.sql.DataSource;
@@ -17,10 +17,8 @@ public class DataServiceDAOFactory {
     private static ThreadLocal<Connection> currentConnection = new ThreadLocal<>();
 
     public static DataServiceDAO getDataServiceDAO() {
-        return new DataServiceDABImplementation();
+        return new DataServiceDABImpl();
     }
-
-
 
 
 
