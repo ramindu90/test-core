@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.mlcr.jobfind</groupId>
-    <artifactId>jobfind-database-mgt-api</artifactId>
+    <artifactId>jobfind-database-mgt</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
 
